@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
 
-export async function GET(req) {
+export async function POST(req) {
     try {
-        //const data = await req.json();
-        //console.log(data); // Hacer algo con los datos recibidos
+        const data = await req.json();
+        console.log(data); // Hacer algo con los datos recibidos
         
         // Responder con un mensaje de éxito
         return NextResponse.json({ mensaje: "Recibiendo estado", status: 200 });
